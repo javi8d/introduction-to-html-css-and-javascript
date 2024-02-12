@@ -22,26 +22,98 @@
         </ul>
       </div>
       <div class="content">
-        <h2>How would you rate our services?</h2>
-        <ol type="1">
-          <li>Needs Improvement</li>
-          <li>Satisfactory</li>
-          <li>Good</li>
-          <li>Very Good</li>
-          <li>Excelent</li>
-        </ol>
-        <form name="Survey">
-          <table width="100%" border="1" cellspacing="5">
-			<tbody>
-				<tr>
-					<td>1. durability</td>
-					<td><input type="number" id="durability" name="durability" min="1" max="5"></td>
-				</tr>
-			</tbody>
-		  </table>
-
-        </form>
+        <div class="scale">
+          <br>
+          <h2>How would you rate our services?</h2>
+          <ol type="1">
+            <li>Needs Improvement</li>
+            <li>Satisfactory</li>
+            <li>Good</li>
+            <li>Very Good</li>
+            <li>Excelent</li>
+          </ol>
+          <br />
+        </div>
+        <div class="survey">
+          <form name="Survey">
+            <table class="center" width="40%" border="0" cellspacing="8">
+              <tbody>
+                <tr>
+                  <td>1. Customer Service</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="customer_service"
+                      name="customer_service"
+                      min="1"
+                      max="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>2. Support during process</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="support_process"
+                      name="support_process"
+                      min="1"
+                      max="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3. Variety of Options</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="variety"
+                      name="variety"
+                      min="1"
+                      max="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>4. Affordability</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="affordability"
+                      name="affordability"
+                      min="1"
+                      max="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>5. Facilities</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="facilities"
+                      name="facilities"
+                      min="1"
+                      max="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttons" colspan="2">
+                    <input
+                      type="button"
+                      value="Register"
+                      onclick="validator()"
+                    />
+                    <input type="reset" value="Clear" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
       </div>
+
       <div class="footer">
         <p>KENT Copyright &copy; 2024.</p>
       </div>

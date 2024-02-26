@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light Bulb</title>
+  </head>
+  <body style="background-color: aquamarine">
+    <script>
+      function light(sv) {
+        var pic;
+        if (sv == 0) {
+          pic = "../images/Bulb_off.png";
+        } else {
+          pic = "../images/Bulb_on.png";
+        }
+        document.getElementById("imagen").src=pic
+    }
+    </script>
+    <img src="../images/Bulb_off.png" id="imagen" width="160" height="249" />
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+  </body>
+</html>

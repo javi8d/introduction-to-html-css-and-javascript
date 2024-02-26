@@ -5,12 +5,13 @@
     <title>basic</title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css" />
     <link href="../css/registration.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../scripts/registration.js"></script>
   </head>
 
   <body>
     <div class="container">
       <div class="header">
-        <div class="logo"><img src="../images/logo_wetravel.png" /></div>
+        <div class="logo"><img src="../images/logo_wetravel.png" alt="logo" /></div>
       </div>
       <div class="menu">
         <ul class="nav">
@@ -21,14 +22,13 @@
           <li><a href="Contact.html">CONTACT</a></li>
         </ul>
       </div>
+      <h2>Personal Information</h2>
+      <br>
       <div class="content">
         <div class="regis_table">
           <form name="registration">
-            <table width="100%" border="0" cellspacing="8">
+            <table>
               <tbody>
-                <tr>
-                  <th colspan="2"><h2>Personal Information</h2></th>
-                </tr>
                 <tr>
                   <td>First Name</td>
                   <td><input type="text" id="fname" /></td>
@@ -61,14 +61,12 @@
                   <td>
                     <input
                       type="radio"
-                      id="gender"
-                      name="gender"
+                      id="boy"
                       value="Male"
                     />Male
                     <input
                       type="radio"
-                      id="gender"
-                      name="gender"
+                      id="girl"
                       value="Female"
                     />Female
                   </td>
@@ -92,12 +90,12 @@
                 <tr>
                   <td>How did you hear about us?</td>
                   <td>
-                    <input type="checkbox" name="aboutus" id="aboutus" /> Web
+                    <input type="checkbox" id="website"/> Web
                     Site
-                    <input type="checkbox" name="aboutus" id="aboutus" /> TV Ads
-                    <input type="checkbox" name="aboutus" id="aboutus" /> Print
+                    <input type="checkbox" id="tvads" /> TV Ads
+                    <input type="checkbox" id="printads" /> Print
                     Ads
-                    <input type="checkbox" name="aboutus" id="aboutus" />
+                    <input type="checkbox" id="friends" />
                     Friends
                   </td>
                 </tr>

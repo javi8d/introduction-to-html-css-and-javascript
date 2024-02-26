@@ -2,3 +2,8 @@ table{border-collapse: collapse;}
 td{text-align: center;}
 th, td{padding: 8px;}
 tr:nth-child(even) {background-color: #5A4C3E;}
+.regis_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
